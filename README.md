@@ -10,5 +10,5 @@ Click on a Pokémon to view more detailed information, including abilities, type
 
 # Technologies Used
 Angular: Frontend framework for building the SPA.
-PokéAPI: RESTful API providing Pokémon data.
+PokéAPI: RESTful API providing Pokémon data(https://pokeapi.co/api/v2 API.).
 Angular Material: UI component library for Angular applications.
