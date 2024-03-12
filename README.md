@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - View a list of Pokémon with their images and basic details.
 - Search for Pokémon by name or ID
-- Click on a Pokémon to view more detailed information, including abilities, types, and stats.
+- Click on a Pokémon to view more detailed information, including power level, habitad, and capture radius.
 
 # Technologies Used
 
