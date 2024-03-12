@@ -1,0 +1,19 @@
+<mat-divider></mat-divider>
+<div class="grid bm-8 pt-2">
+  <div
+    *ngFor="let pokemon of pokemons"
+    class="col-12 sm:col-4 md:col-3 xl:col-2">
+    <pokemon-card [pokemon]="pokemon"> </pokemon-card>
+  </div>
+  <mat-paginator
+    [length]="totalPokemons"
+    [pageSize]="20"
+    [showFirstLastButtons]="true"
+    [pageSizeOptions]="[5, 10, 20]"
+    [pageIndex]="currentPage"
+    (page)="handlePageEvent($event)"
+    class="flex align-items-end"
+    style="width: 100%"
+  >
+  </mat-paginator>
+</div>
