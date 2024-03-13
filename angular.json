@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pokemonfront": {
+    "pokemon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pokemonfront",
+            "outputPath": "dist/pokemon",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -45,7 +45,7 @@
               "fileReplacements": [
                 {
                   "replace": "src/environments/environments.ts",
-                  "with": "src/environments/environments.prod.ts"
+                  "with": "src/environments/environments.ts"
                 }
               ],
               "budgets": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pokemonfront:build:production"
+              "buildTarget": "pokemon:build:production"
             },
             "development": {
-              "buildTarget": "pokemonfront:build:development"
+              "buildTarget": "pokemon:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "pokemonfront:build"
+            "buildTarget": "pokemon:build"
           }
         },
         "test": {
