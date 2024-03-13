@@ -1,5 +1,7 @@
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # You can specify the branch you want to trigger the workflow on
 
 env:
   AZURE_WEBAPP_NAME: 'standard-bank-pokemon-app'    # set this to your application's name
