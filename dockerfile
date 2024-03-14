@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copy built Angular app from previous stage to Nginx directory
-COPY --from=build /usr/src/app/dist/Standard-bank-pokemon-web /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/standard-bank-pokemon-web /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
