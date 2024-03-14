@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t standardbankpokemonregistry.azurecr.io/standard-bank-pokemon-web .
+      run: docker build -t standardbankpokemonregistry.azurecr.io/pokemon .
 
     - name: Push Docker image to Azure Container Registry
-      run: docker push standardbankpokemonregistry.azurecr.io/standard-bank-pokemon-web
+      run: docker push standardbankpokemonregistry.azurecr.io/pokemon
 
