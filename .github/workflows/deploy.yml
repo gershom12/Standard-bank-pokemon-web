@@ -30,6 +30,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: standard-bank-pokemon-app
-        images: 'standardbankpokemonregistry.azurecr.io/my-angular-app:latest'
+        images: 'standardbankpokemonregistry.azurecr.io/pokemon:latest'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
 
