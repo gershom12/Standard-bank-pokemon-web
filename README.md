@@ -39,4 +39,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - Angular: Frontend framework for building the SPA.
 - PokéAPI: RESTful API providing Pokémon data(https://pokeapi.co/api/v2 API).
 - Angular Material: UI component library for Angular applications.
+- Docker(Containerization)
+- Github actions(CI/CD)
 
