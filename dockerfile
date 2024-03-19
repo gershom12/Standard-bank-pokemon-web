@@ -19,6 +19,9 @@ RUN npm run build
 # Use Nginx image to serve Angular app in production
 FROM nginx:alpine
 
+# Remove default nginx website
+RUN rm -rf /usr/share/nginx/html/*
+
 # Copy built Angular app from previous stage to Nginx directory
 COPY --from=build /usr/src/app/dist/pokemon /usr/share/nginx/html
 

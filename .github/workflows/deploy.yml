@@ -13,6 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run unit tests
+      run: npm run test
+
     - name: Login to Azure Container Registry
       uses: azure/docker-login@v1
       with:
